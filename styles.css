@@ -1,0 +1,37 @@
+@import url("./global-style.css");
+@import url("./header/header.css");
+@import url("./banner/banner.css");
+@import url("./catalog/catalog.css");
+@import url("./footer/footer.css");
+@import url("./modals/modals.css");
+
+@font-face {
+    font-family: 'ArialBold';
+    src: url('./fonts/ArialBold.ttf');
+}
+
+@font-face {
+    font-family: 'ArialRegular';
+    src: url('./fonts/ArialRegular.ttf');
+}
+
+body {
+    font-size: 20px;
+    font-family: 'ArialRegular',sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1352px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.logo {
+    max-width: 91px;
+    max-height: 28px;
+}
+
+.bold {
+    font-family: 'ArialBold', sans-serif;
+}
