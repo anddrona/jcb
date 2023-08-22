@@ -36,6 +36,7 @@
 
 .modal__input {
     border-color: #FCB026;
+    color: #000;
     margin-bottom: 15px;
     opacity:1;
 }
