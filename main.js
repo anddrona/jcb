@@ -3,29 +3,39 @@ const PriceButtons = document.querySelectorAll('.price');
 const ModalPrice = document.querySelector('.modal-price');
 const LisingButtons = document.querySelectorAll('.lising');
 const ModalLising = document.querySelector('.modal-lising');
-const ModalClose = document.querySelectorAll('.modal__close');
+let wrap = document.querySelectorAll('.modal-wrapper');
+let CloseButtons = document.querySelectorAll('.close');
+
 
 PriceButtons.forEach(ButtonTarget => {
     ButtonTarget.addEventListener('click', function(e){
         ModalPrice.style.display = 'flex';
-        return ButtonTarget
     })
 })
 
 LisingButtons.forEach(ButtonTarget => {
     ButtonTarget.addEventListener('click', function(e){
         ModalLising.style.display = 'flex';
-        return ButtonTarget
     })
 }) 
 
-
-ModalClose.forEach(CloseWindowTarget => {
-    CloseWindowTarget.addEventListener('click', function(e){
+CloseButtons.forEach(item =>{
+    item.addEventListener ('click', function(e){
         ModalPrice.style.display = 'none';
         ModalLising.style.display = 'none';
-    })
+    });
 })
+
+wrap.forEach(item =>{
+    item.addEventListener ('click', function(e){
+        if(e.target == item){
+            ModalPrice.style.display = 'none';
+            ModalLising.style.display = 'none';
+        }
+    });
+    
+})
+
 
 
 let phoneInputs = document.querySelectorAll('input[data-tel-input]');
